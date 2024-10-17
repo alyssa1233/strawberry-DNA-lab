@@ -1,0 +1,81 @@
+:root {
+    --angle:0deg;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bgImg {
+    /* background-image:url(""); */
+    background-size: 100vw auto;  
+    object-fit: contain;
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#img-btn {
+    background-image:url('');
+    width:30%;
+    height:30%;
+    background-size:cover;
+    cursor:pointer;
+    border:none;
+}
+
+#image {
+    position:absolute;
+    transform:rotate(var(--angle));
+}
+
+#image:hover {
+    /* filter:drop-shadow(0px 0px 10px 7px #ffffff);  */
+    transform:scale(1.06) rotate(var(--angle));
+}
+
+#scene {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+}
+
+#popUp {
+    background-color: #f1e9d2;
+    color:black;
+    padding:15px;
+    position: absolute;
+    width: 200px;
+}
+
+a {
+    z-index: 5;
+    position:absolute;
+
+}
+
+.backBtn {
+    background-image: url(assets/backarrow.png);
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    background-size: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+.backBtn:hover {
+    animation: nudge 1.5s ease-in-out 1;
+}
+
+@keyframes nudge{
+    50% {transform:rotate(-20deg)}
+    100% {transform:rotate(20deg)}
+}
+
+
+

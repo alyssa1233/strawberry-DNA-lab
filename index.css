@@ -1,0 +1,29 @@
+body {
+    background-image: url(assets/frontpage.png);
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+}
+
+#labBtn {
+    position:absolute;
+    left:50%;
+    top:70vh;
+    transform: translate(-50%,0);
+    font-size:30px;
+    padding:20px;
+    background-color:#151944;
+    color:white;
+    border: none;
+    /* width:150px;
+    height:70px; */
+}
+#labBtn:hover {
+    background-color:rgb(255, 62, 3);
+    border: none;
+}
